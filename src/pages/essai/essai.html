@@ -1,0 +1,23 @@
+<ion-content padding>
+    
+  <div *ngIf="ss>0" class="sommeclass">  <span class="somo" >{{ss}} ريال </span> </div>
+    <img src="assets/imgs/cc.png" class="sip" (click)="click()">
+    <ion-slides dir="rtl" paginationType="fraction" pager="true">
+      
+        <ion-slide *ngFor="let qu of ques;let index=index;let lastquest=last">  
+  
+    <ion-icon  (click)='back(index)' class="goback" name="arrow-back"></ion-icon>
+     
+          <h3>  {{qu.name}}</h3> 
+      <ion-grid >
+          <ion-row >
+            <ion-col col-6  [ngClass]="{'middle':last && ((index+1) % 2 )!=0}" (click)="nav(q,lastquest,qu.name)"  *ngFor="let q of qu.responces;let last=last;let index=index">
+              <img src="{{q.urlImage}}">
+                    {{q.name}}
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+         </ion-slide>
+      </ion-slides>
+      <div class="bg"></div>
+</ion-content>

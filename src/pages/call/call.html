@@ -1,0 +1,34 @@
+
+<ion-content padding>
+    <ion-icon *ngIf="navCtrl.canGoBack()" (click)='back()' class="goback" name="arrow-back"></ion-icon>
+    <h2>إتصل بنا</h2>
+    <form [formGroup]='loginForm'>
+    <ion-list>
+        <br>
+      <ion-item>
+        <ion-input placeholder="الاسم" type="text" [(ngModel)]="name" formControlName="nom" ></ion-input>
+      </ion-item>
+      <div *ngIf="(!loginForm.controls.nom.valid && (loginForm.controls.nom.dirty || submit))" class="erreur">
+          <span class="etoile" *ngIf="loginForm.hasError('required',['nom'])"> يجب عليك كتابة الاسم </span>  
+       </div>
+      <br>
+      <ion-item>
+          <ion-input placeholder="البريد الإلكتروني" type="email" [(ngModel)]="email" formControlName="mail" ></ion-input>
+      </ion-item>
+      <div *ngIf="(!loginForm.controls.mail.valid && (loginForm.controls.mail.dirty || submit))" class="erreur">
+          <span class="etoile" *ngIf="loginForm.hasError('required',['mail'])">يجب عليك كتابة البريد الإلكتروني</span>  
+          <span class="etoile" *ngIf="loginForm.hasError('pattern',['mail'])">xyz@example.com</span>
+            </div>
+      <br>
+      <ion-item>
+        <ion-textarea rows="3" placeholder="نص الرسالة" type="text" [(ngModel)]="message" formControlName="msg" ></ion-textarea>
+      </ion-item>
+      <div *ngIf="(!loginForm.controls.msg.valid && (loginForm.controls.msg.dirty || submit))" class="erreur">
+          <span class="etoile" *ngIf="loginForm.hasError('required',['msg'])"> يجب عليك كتابة نص الرسالة </span>  
+       </div>
+    </ion-list>
+    <div class="prim">
+    <button ion-button  color="star" (click)="click()" class="log" >أرسل الآن</button> 
+  </div>
+  </form>
+</ion-content>

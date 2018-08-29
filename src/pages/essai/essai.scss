@@ -1,0 +1,39 @@
+page-essai {
+    img{
+        width: 150px;
+    }
+   .imge {
+    width: 70px;
+    margin-right: -264px;
+    }
+    div{
+     //   margin-top: -45px;
+    }
+    
+    .sommeclass{
+     position:absolute;
+     z-index: 999;
+     top:0px;
+     right:0px;
+     padding: 15px;
+     margin-top: 8px;
+    }
+    .sip{
+        width: 160px;
+        position: absolute;
+        z-index: 999;
+        top: -37px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .scroll-content{
+        background: url("../assets/imgs/net.png") no-repeat center;
+        //background: url("../assets/imgs/net.png")  ;
+        -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        background-size: 100%;
+        background-position-y: 108%;
+        
+    }
+     
+}
