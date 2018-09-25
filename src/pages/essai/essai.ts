@@ -43,7 +43,7 @@ export class EssaiPage {
     console.log(this.slides.length());
     this.el=this.slides.getActiveIndex();
     this.le=this.slides.length()-1;
-    this.http.get("http://127.0.0.1:8000/api/questions").subscribe((response)=> {
+    this.http.get("http://vps513308.ovh.net:8000/api/questions").subscribe((response)=> {
      // console.log(response.json());
      this.ques=response.json();
      this.loading.dismiss();

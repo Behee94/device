@@ -32,7 +32,7 @@ export class FinPage {
     console.log(this.tab);
     
     //console.log(this.prix);
-    this.http.get("http://127.0.0.1:8000/api/setting/reduction").subscribe((response)=> {
+    this.http.get("http://vps513308.ovh.net:8000/api/setting/reduction").subscribe((response)=> {
       console.log(response.json());
       this.rep=response.json();
     });

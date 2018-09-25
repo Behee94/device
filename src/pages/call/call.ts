@@ -64,7 +64,7 @@ export class CallPage {
       position: 'bottom'
     });
     this.presentLoadingCustom();
-     this.http.post("http://127.0.0.1:8000/api/contact", userCredentials).subscribe((data)=> {
+     this.http.post("http://vps513308.ovh.net:8000/api/contact", userCredentials).subscribe((data)=> {
       console.log(data); 
       this.loading.dismiss();
       toast.present();
