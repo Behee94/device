@@ -45,12 +45,8 @@ export class EssaiPage {
     console.log(this.slides.length());
     this.el=this.slides.getActiveIndex();
     this.le=this.slides.length()-1;
-    this.http.get("http://vps513308.ovh.net:8000/api/questions").subscribe((response)=> {
-     // console.log(response.json());
-     this.ques=response.json();
-     this.loading.dismiss();
-      //console.log(this.ques);
-    });
+     this.ques=this.q;
+ 
     if(this.le==this.el){
       this.ind=this.tab.length;
       this.ss=this.ss-this.tab[this.ind-1];

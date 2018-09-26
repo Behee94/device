@@ -15,7 +15,7 @@ export class HomePage {
   constructor(public navCtrl: NavController,private alertCtrl: AlertController,public http: Http
   ,private loadingCtrl:LoadingController) {
     this.presentLoadingCustom();
-    this.http.get("http://192.168.1.17/www/appcoast/public/api/questions").subscribe((response)=> {
+    this.http.get("http://vps513308.ovh.net:8000/api/questions").subscribe((response)=> {
      // console.log(response.json());
      this.loading.dismiss();
      this.ques=response.json();
