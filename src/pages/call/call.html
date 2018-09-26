@@ -21,6 +21,13 @@
             </div>
       <br>
       <ion-item>
+        <ion-input placeholder="رقم الجوال" type="number" [(ngModel)]="mob" formControlName="mobile" ></ion-input>
+      </ion-item>
+      <div *ngIf="(!loginForm.controls.mobile.valid && (loginForm.controls.mobile.dirty || submit))" class="erreur">
+          <span class="etoile" *ngIf="loginForm.hasError('required',['mobile'])"> يجب عليك كتابة رقم الجوال </span>  
+       </div>
+      <br>
+      <ion-item>
         <ion-textarea rows="3" placeholder="نص الرسالة" type="text" [(ngModel)]="message" formControlName="msg" ></ion-textarea>
       </ion-item>
       <div *ngIf="(!loginForm.controls.msg.valid && (loginForm.controls.msg.dirty || submit))" class="erreur">

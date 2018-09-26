@@ -20,6 +20,7 @@ import { AlertController } from 'ionic-angular';
 export class EssaiPage {
   @ViewChild(Slides) slides: Slides;
   private ques:any=[];
+  private q:any=[];
   i:number;
   g:number;
   ss:number;
@@ -34,22 +35,19 @@ export class EssaiPage {
   constructor(public navCtrl: NavController, public navParams: NavParams,
     public http: Http,private alertCtrl: AlertController,private loadingCtrl:LoadingController) {
     this.ss=0;
+    this.q = this.navParams.get('ques');
   }
 
   ionViewDidEnter() {
-    this.presentLoadingCustom();
+    
     this.slides.lockSwipes(true);
     console.log(this.slides.getActiveIndex());
     console.log(this.slides.length());
     this.el=this.slides.getActiveIndex();
     this.le=this.slides.length()-1;
-    this.http.get("http://127.0.0.1:8000/api/questions").subscribe((response)=> {
-     // console.log(response.json());
-     this.ques=response.json();
-     this.loading.dismiss();
+    this.ques=this.q;
       //console.log(this.ques);
   
-    })
     if(this.le==this.el){
       this.ind=this.tab.length;
       this.ss=this.ss-this.tab[this.ind-1];
@@ -59,14 +57,6 @@ export class EssaiPage {
     console.log(this.tab);
     
   }
-  presentLoadingCustom() {
-    this.loading = this.loadingCtrl.create({
-       spinner: 'hide',
-       content: `<div class="lds-grid"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>`,
-     });
-
-     this.loading.present();
-   }
   nav(q,last,qname?){
     //console.log(last);
    console.log();
