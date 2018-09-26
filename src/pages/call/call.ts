@@ -68,7 +68,7 @@ export class CallPage {
       position: 'bottom'
     });
     this.presentLoadingCustom();
-     this.http.post("http://192.168.1.11/www/appcoast/public/api/contact", userCredentials).subscribe((data)=> {
+     this.http.post("http://vps513308.ovh.net:8000/api/contact", userCredentials).subscribe((data)=> {
       console.log(data); 
       this.loading.dismiss();
       toast.present();
