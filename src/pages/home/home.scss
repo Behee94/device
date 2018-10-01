@@ -10,30 +10,39 @@ page-home {
      .toolbar-title-md{
         font-size: 22px;
     }
-    button.bio
-    {
-        padding: 30px!important;
-    }
 
     p{
         text-align: center;
         font-size: 19px;
     }
-    h6,h3{
+  h3{
         text-align: center;
+        font-size: 20px!important;
+        margin-bottom:5px!important;
     }
-    h6{
-        color: gray;
+    h3:first-child{
+        margin-top: 5px!important;
     }
-    
-
     .myfooter{
         position: absolute;
         bottom: 0px;
         text-align: center;
         width: 100%;
         z-index: 99999!important;
+        h6{
         font-size: 12px;
+        margin-bottom:0px!important;
+        margin-top:6px!important;
+        color: gray;
+        text-align: center;
+        }
+        .bio{
+        padding:20px!important;
+        border-radius:5px!important;
+        .button-inner{
+            font-size:25px!important;
+        }
+        }        
     }
     
 

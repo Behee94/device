@@ -2,13 +2,16 @@
 <ion-content>
   
   
-  <h3>{{question}}</h3>
+  <h3 class="animated fadeInDown" [style.animation-delay]="'500ms'">{{question}}</h3>
   
-  <h3>
+  <h3 class="animated fadeInRight" [style.animation-delay]="'1000ms'" >
     {{description}}
   </h3>
-  <img src="{{img}}">
-  <button ion-button block (click)="demarrer()" color=face class="bio">لنبدأ</button>
+  <img  class="animated fadeIn placeholderImage" [style.animation-delay]="'2000ms'" src="{{img}}">
+  <div class="myfooter">
+  <button class="animated fadeInUp bio" [style.animation-delay]="'2100ms'" ion-button block (click)="demarrer()" color=face >لنبدأ</button>
+  <h6  (click)="ale()"> لمزيد من المعلومات</h6>
+</div>
 </ion-content>
-   <h6 class='myfooter' (click)="ale()"> لمزيد من المعلومات</h6>
+  
   

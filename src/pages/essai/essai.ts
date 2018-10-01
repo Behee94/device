@@ -39,7 +39,9 @@ export class EssaiPage {
   }
 
   ionViewDidEnter() {
-    
+    setTimeout(() => {
+      
+    }, 4000);
     this.slides.lockSwipes(true);
     console.log(this.slides.getActiveIndex());
     console.log(this.slides.length());

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams , ModalController} from 'ionic-angular';
 import { Http } from '@angular/http';
 import{EssaiPage} from '../essai/essai';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the FinPage page.
@@ -54,5 +55,7 @@ export class FinPage {
   
 //<a>أحصل على تخفيض 10%</a>   <a href="http://vps513308.ovh.net:8080/">أحصل على تطبيقك</a> 
   
-
+gotoHome(){
+  this.navCtrl.setRoot(HomePage);
+}
 }
