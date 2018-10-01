@@ -7,6 +7,9 @@
 
 
 <ion-content padding>
+    <button ion-button icon-only class="homeBtn" color="jdid" (click)="gotoHome()">
+        <ion-icon name="home"></ion-icon>
+    </button>
     <ion-icon *ngIf="navCtrl.canGoBack()" (click)='back()' class="goback" name="arrow-back"></ion-icon>
 <p class="p">
 
@@ -19,9 +22,6 @@
   <button ion-button class="bio" color="jdid" onclick="window.location.href='http://vps513308.ovh.net:8080/'" full >أحصل على تطبيقك</button>
   <button ion-button class="bio" color="jdid" (click)="vers()" full>أحصل على تخفيض <span class="pour">{{rep.reduction}}%</span></button>
   <button ion-button class="bio" color="jdid" (click)="vers()" full>أحصل على تخفيض <span class="pour">10%</span></button>
-  <button ion-button icon-only class="homeBtn" color="jdid" (click)="gotoHome()">
-      <ion-icon name="home"></ion-icon>
-  </button>
 </div>  
     
 </ion-content>
