@@ -92,11 +92,12 @@ export class EssaiPage {
 
 
 }
-  back(index){
-    
+  back(){
+    let index = this.slides.getActiveIndex();
+    console.log(index);
+    console.log("Tapped");
     if(index==0)
     {
-      console.log('fff');
       this.navCtrl.pop();
     }
     else{

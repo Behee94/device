@@ -6,6 +6,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { HttpModule } from '@angular/http';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { IonicImageLoader } from 'ionic-image-loader';
+
 
 
 @NgModule({
@@ -16,6 +18,7 @@ import { HomePage } from '../pages/home/home';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    IonicImageLoader.forRoot(),
     HttpModule
   ],
   bootstrap: [IonicApp],

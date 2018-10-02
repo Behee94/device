@@ -1,7 +1,14 @@
 page-essai {
-    img{
-        width: 150px;
+    .col{
+        text-align:center!important;
+    img-loader{
+       
+        width: 130px!important;
+        height: 130px!important;
+        margin:0px!important;
+        margin:0px auto!important;
     }
+}
    .imge {
     width: 70px;
     margin-right: -264px;
@@ -13,16 +20,17 @@ page-essai {
     .sommeclass{
      position:absolute;
      z-index: 999;
-     top:0px;
-     right:0px;
-     padding: 15px;
-     margin-top: 8px;
+     top:20px;
+     left:14px;
+     .somo{
+         font-size:11px;
+     }
     }
     .sip{
         width: 160px;
         position: absolute;
         z-index: 999;
-        top: -37px;
+        top: -34px;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -34,6 +42,15 @@ page-essai {
         background-size: 100%;
         background-position-y: 108%;
         
+    }
+    .questions{
+        margin-top: 4.1rem; 
+
+    }
+
+    .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets{
+        bottom: 0px!important;
+        text-align: left!important;
     }
      
 }
