@@ -63,7 +63,7 @@ export class CallPage {
    if(this.loginForm.valid){
          
     let toast= this.toastCtrl.create({
-      message: 'تم حفظ البيانات',
+      message: 'تمّ استلام طلبكم بعناية، سيحرص فريق عمل براعه على إجابتكم في أقصى سرعة إن شاء الله.',
       duration: 3000,
       position: 'bottom'
     });

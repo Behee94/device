@@ -1,6 +1,6 @@
 
-<ion-content>
-  
+<ion-content >
+  <div style="height:100%;width:100%" ion-fixed>
   
   <h3 padding class="animated fadeInDown" [style.animation-delay]="'500ms'">{{question}}</h3>
   
@@ -9,8 +9,10 @@
   </h3>
   <img  class="animated fadeIn placeholderImage" [style.animation-delay]="'2000ms'" src="{{img}}">
   <div class="myfooter">
-  <button class="animated fadeInUp bio" [style.animation-delay]="'2100ms'" ion-button block (click)="demarrer()" color=face >لنبدأ</button>
-  <h6  (click)="ale()"> لمزيد من المعلومات</h6>
+  <button class="animated fadeInUp bio" [style.animation-delay]="'2100ms'" ion-button block (click)="demarrer()" color=face > لنبدأ الآن</button>
+  <h6  (click)="ale()">عن التطبيق</h6>
+</div>
+
 </div>
 </ion-content>
   
