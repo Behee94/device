@@ -49,8 +49,8 @@ export class FinPage {
     this.navCtrl.pop();
    }
 
-   vers(){
-    this.navCtrl.push("CallPage",{repo:this.tab,listquest:this.listquest});
+   vers(q?){
+    this.navCtrl.push("CallPage",{repo:this.tab,listquest:this.listquest,choice:q});
   }
   
 //<a>أحصل على تخفيض 10%</a>   <a href="http://vps513308.ovh.net:8080/">أحصل على تطبيقك</a> 

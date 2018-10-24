@@ -52,7 +52,8 @@ export class CallPage {
      
      let userCredentials = 
      {
-      "reponses": this.tab.map(res=>res.name).toString(),
+     "reponses": this.tab.map(res=>res.name).toString(),
+     "choice":this.navParams.get("choice"),
      "name": this.name, 
      "email": this.email,
      "mobile": this.mob,

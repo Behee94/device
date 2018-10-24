@@ -26,7 +26,8 @@ page-home {
     .mytitle{
         color:map-get($colors , face);
         font-size: x-large!important;
-        font-family: sans-serif!important;
+        font-family: planer!important;
+        font-weight: 600!important;
     }
   h3{
         
@@ -47,13 +48,14 @@ page-home {
         z-index: 99999!important;
         h6{
         font-size: 12px;
-        margin-bottom:0px!important;
+        margin-bottom:15px!important;
         margin-top:6px!important;
         color: gray;
         text-align: center;
         }
         .bio{
         padding:26px!important;
+        margin-bottom:10px!important;
         .button-inner{
             font-size:25px!important;
         }
@@ -68,5 +70,5 @@ page-home {
     z-index: -1!important;
     }
     
-
+  
 }
