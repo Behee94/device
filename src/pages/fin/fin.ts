@@ -50,6 +50,7 @@ export class FinPage {
    }
 
    vers(q?){
+     console.log(q);
     this.navCtrl.push("CallPage",{repo:this.tab,listquest:this.listquest,choice:q});
   }
   
@@ -57,5 +58,6 @@ export class FinPage {
   
 gotoHome(){
   this.navCtrl.setRoot(HomePage);
+  console.log(this.tab);
 }
 }

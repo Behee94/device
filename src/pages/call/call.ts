@@ -40,6 +40,7 @@ export class CallPage {
       this.tab = this.navParams.get('repo');
       this.listquest = this.navParams.get('listquest');
       console.log(this.tab);
+      console.log("Sending To server");
    }
    
    back()
@@ -60,6 +61,7 @@ export class CallPage {
      "description": this.message, 
      "questions":this.listquest, 
      }
+     console.log(userCredentials);
      
    if(this.loginForm.valid){
          

@@ -19,9 +19,9 @@
 <br>
 <br>
 <div>
-  <button ion-button class="bio" color="jdid"  (click)="vers(rep.question1)" full >{{rep.question1}}</button>
-  <button ion-button class="bio" color="jdid" (click)="vers(rep.question2)" full>{{rep.question2}} <span class="pour">{{rep.reduction}}%</span></button>
-  <button ion-button class="bio" color="jdid" (click)="vers(rep.question3)" full>{{rep.question3}}</button>
+  <button ion-button class="bio" color="jdid"  (click)="vers((rep.question1  + ' :'+prix ))" full >{{rep.question1}}</button>
+  <button ion-button class="bio" color="jdid" (click)="vers((rep.question2+' '+rep.reduction+' %' +' :'+prix))" full>{{rep.question2}} <span class="pour">{{rep.reduction}}%</span></button>
+  <button ion-button class="bio" color="jdid" (click)="vers((rep.question3 + ':'+prix))" full>{{rep.question3}}</button>
 </div>  
     
 </ion-content>

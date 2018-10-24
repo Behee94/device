@@ -85,6 +85,7 @@ export class EssaiPage {
     this.ss=q.coast+this.ss;
     this.rep.push(q);
     console.log(this.rep);
+    console.log(this.rep,this.ques.map(res=>res.name).toString());
     this.navCtrl.push('FinPage',{somme:this.ss,reponses:this.rep,listquest:this.ques.map(res=>res.name).toString()});
     console.log(this.ss);
     
